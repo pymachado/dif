@@ -70,19 +70,24 @@ contract PooLRBAC is AccessControl {
     return (investors[investor].dayDeposit - block.timestamp);
   } 
 
-  function _interest(uint256 newInterest) public onlyRole(DEFAULT_ADMIN_ROLE) returns(bool status) {
+  function _interest(uint256 newInterest) public onlyRole(DEFAULT_ADMIN_ROLE) returns(bool) {
     interest = newInterest;
-    status = true;
+    return true;
   }
 
-  function _minInvesting(uint256 newMinInvesting) public onlyRole(DEFAULT_ADMIN_ROLE) returns(bool status) {
+  function _stakingDays(uint256 newStakingDays) public onlyRole(DEFAULT_ADMIN_ROLE) returns(bool) {
+    stakingDays = newStakingDays;
+    return true;
+  }
+
+  function _minInvesting(uint256 newMinInvesting) public onlyRole(DEFAULT_ADMIN_ROLE) returns(bool) {
     minInvesting = newMinInvesting;
-    status = true;
+    return true;
   }
 
-  function _marginInvestment(uint256 newMarginInvestmment) public onlyRole(DEFAULT_ADMIN_ROLE) returns(bool status) {
+  function _marginInvestment(uint256 newMarginInvestmment) public onlyRole(DEFAULT_ADMIN_ROLE) returns(bool) {
     marginInvestment = newMarginInvestmment;
-    status = true;
+    return true;
   }
 
   function deposit(uint256 _amount) external returns(bool) {
