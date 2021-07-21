@@ -1,5 +1,7 @@
 const Web3 = require("web3");
-const web3 = new Web3("http://loopback:9545");
+require('dotenv').config();
+//const web3 = new Web3("http://loopback:9545");
+const web3 = new Web3(`https://ropsten.infura.io/v3/${process.env.INFURA_ID}`);
 
 const Dai = require("./build/contracts/Dai.json");
 
@@ -55,9 +57,9 @@ async function transfer(recipient, amount, index) {
     console.log(await dai.methods.transfer(recipient, amount).send({from: accounts[index], gas: gasLimit}));
 }
 
-name()
-symbol()
-decimals()
-transfer("0xeE4924d58eb24aA3e2FE8A8e24009eE10d09D974", web3.utils.toWei("3000", "ether"), 7);
-getBalance("0x5846346EbBf4b6e2d74a61B846666e605Afd0D2d")
-totalSuply()
+//name()
+//symbol()
+//decimals()
+//transfer("0xeE4924d58eb24aA3e2FE8A8e24009eE10d09D974", web3.utils.toWei("3000", "ether"), 7);
+//getBalance("0x5846346EbBf4b6e2d74a61B846666e605Afd0D2d")
+//totalSuply()
