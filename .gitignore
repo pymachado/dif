@@ -4,3 +4,8 @@ contracts\Dai.sol
 contracts\POOL.sol
 app.js
 daiCall.js
+contracts\.deps
+contracts\artifacts
+build\contracts\Dai.json
+build\contracts\PooLRBAC.json
+daiCall.js
