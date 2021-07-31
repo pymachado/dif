@@ -9,7 +9,6 @@ import "./ISale.sol";
 
 contract PooLRBAC is AccessControl {
   using Counters for Counters.Counter;
-  
   bytes32 public constant MODERATOR_ROLE = keccak256("MODERATOR_ROLE");
   bytes32 public constant FUNDER_ROLE = keccak256("FUNDER_ROLE");
 
@@ -52,6 +51,12 @@ contract PooLRBAC is AccessControl {
       _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
       grantRole(MODERATOR_ROLE, accountModerator);
       grantRole(FUNDER_ROLE, accountFunder);
+  }
+
+  function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
+    return interfaceId == type(ISale).interfaceId 
+        || interfaceId == type(IERC20).interfaceId
+        || interfaceId == type(IERC721).interfaceId || super.supportsInterface(interfaceId);
   }
   
   function investingOf(address _investor) public view returns(uint256 balance){
@@ -112,6 +117,7 @@ contract PooLRBAC is AccessControl {
     return true;
   }  
 
+  //Here I can use the ERC165 to verify the Sale's Interface ISale.sol
   function approve(address contractSale) external onlyRole(MODERATOR_ROLE) returns(bool) {
     require(contractSale != address(0), "POOL: MODERATOR query for nonexistent contract Sale");
     require(tokenFactoring.ownerOf(ISale(contractSale).tokenId()) != address(0), "POOL: MODERATOR query for non existent tokenId");
@@ -134,6 +140,8 @@ contract PooLRBAC is AccessControl {
      uint256 value = (_interestInPorcentage * _amount) / (100 * 10 **18);
      return value;
   }
+
+
 
 }
 

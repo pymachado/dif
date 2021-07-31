@@ -1,0 +1,407 @@
+[
+  '0xE256d74A4A5D2EE8b4C96cD41d4506A3DFF6D8D8',
+  '0x79d2B3b4D0115F92d7970F99684E6f787Eb51275',
+  '0xCA56A4fC1567Fd055bed047BEf9Efb3aA5F0cEE8',
+  '0xdA6A5185837AdA813bE9d1DF59d67c3583656Bde',
+  '0x58A37293fFC9C06d8bCA00E534d6129B53Ec4BdB',
+  '0x54F3c85177eC4Af15e39cA54C48E8E74082e3aE0',
+  '0xC569DB4483E968A508143B14Ae7d83b17Ad28ee8',
+  '0x5488E173813C2c5200d9483D04A9E01c870F9A1a',
+  '0xc3D66bD809A441F606b98d312529c25915C65fE0',
+  '0x87af365E27DCb9bF1B967C21e31875945C58fE0e'
+]
+(node:2452) UnhandledPromiseRejectionWarning: TypeError: Assignment to constant variable.
+    at init (D:\Trabajo\0-Reservafs\Proyectos\DIF\deploy_sale.js:19:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:2452) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, 
+use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 8)
+(node:2452) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+^C
+D:\Trabajo\0-Reservafs\Proyectos\DIF>node deploy_sale.js
+(node:9520) UnhandledPromiseRejectionWarning: ReferenceError: consolole is not defined
+    at init (D:\Trabajo\0-Reservafs\Proyectos\DIF\deploy_sale.js:21:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:9520) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, 
+use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 36)
+(node:9520) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+^C
+D:\Trabajo\0-Reservafs\Proyectos\DIF>node deploy_sale.js
+Contract {
+  setProvider: [Function],
+  currentProvider: [Getter/Setter],
+  _requestManager: RequestManager {
+    provider: HDWalletProvider {
+      walletHdpath: "m/44'/60'/0'/0/",
+      wallets: [Object],
+      addresses: [Array],
+      chainSettings: {},
+      engine: [Web3ProviderEngine],
+      hdwallet: [EthereumHDKey],
+      initialized: [Promise],
+      hardfork: 'istanbul',
+      chainId: 3
+    },
+    providers: {
+      WebsocketProvider: [Function: WebsocketProvider],
+      HttpProvider: [Function: HttpProvider],
+      IpcProvider: [Function: IpcProvider]
+    },
+    subscriptions: Map {}
+  },
+  givenProvider: null,
+  providers: {
+    WebsocketProvider: [Function: WebsocketProvider],
+    HttpProvider: [Function: HttpProvider],
+    IpcProvider: [Function: IpcProvider]
+  },
+  _provider: HDWalletProvider {
+    walletHdpath: "m/44'/60'/0'/0/",
+    wallets: {
+      '0xe256d74a4a5d2ee8b4c96cd41d4506a3dff6d8d8': [Wallet],
+      '0x79d2b3b4d0115f92d7970f99684e6f787eb51275': [Wallet],
+      '0xca56a4fc1567fd055bed047bef9efb3aa5f0cee8': [Wallet],
+      '0xda6a5185837ada813be9d1df59d67c3583656bde': [Wallet],
+      '0x58a37293ffc9c06d8bca00e534d6129b53ec4bdb': [Wallet],
+      '0x54f3c85177ec4af15e39ca54c48e8e74082e3ae0': [Wallet],
+      '0xc569db4483e968a508143b14ae7d83b17ad28ee8': [Wallet],
+      '0x5488e173813c2c5200d9483d04a9e01c870f9a1a': [Wallet],
+      '0xc3d66bd809a441f606b98d312529c25915c65fe0': [Wallet],
+      '0x87af365e27dcb9bf1b967c21e31875945c58fe0e': [Wallet]
+    },
+    addresses: [
+      '0xe256d74a4a5d2ee8b4c96cd41d4506a3dff6d8d8',
+      '0x79d2b3b4d0115f92d7970f99684e6f787eb51275',
+      '0xca56a4fc1567fd055bed047bef9efb3aa5f0cee8',
+      '0xda6a5185837ada813be9d1df59d67c3583656bde',
+      '0x58a37293ffc9c06d8bca00e534d6129b53ec4bdb',
+      '0x54f3c85177ec4af15e39ca54c48e8e74082e3ae0',
+      '0xc569db4483e968a508143b14ae7d83b17ad28ee8',
+      '0x5488e173813c2c5200d9483d04a9e01c870f9a1a',
+      '0xc3d66bd809a441f606b98d312529c25915c65fe0',
+      '0x87af365e27dcb9bf1b967c21e31875945c58fe0e'
+    ],
+    chainSettings: {},
+    engine: Web3ProviderEngine {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 30,
+      _blockTracker: [PollingBlockTracker],
+      _ready: [Stoplight],
+      currentBlock: [Object],
+      _providers: [Array],
+      silent: false,
+      _running: true,
+      [Symbol(kCapture)]: false
+    },
+    hdwallet: EthereumHDKey { _hdkey: [HDKey] },
+    initialized: Promise { undefined },
+    hardfork: 'istanbul',
+    chainId: 3
+  },
+  setRequestManager: [Function],
+  BatchRequest: [Function: bound Batch],
+  extend: [Function: ex] {
+    formatters: {
+      inputDefaultBlockNumberFormatter: [Function: inputDefaultBlockNumberFormatter],
+      inputBlockNumberFormatter: [Function: inputBlockNumberFormatter],
+      inputCallFormatter: [Function: inputCallFormatter],
+      inputTransactionFormatter: [Function: inputTransactionFormatter],
+      inputAddressFormatter: [Function: inputAddressFormatter],
+      inputPostFormatter: [Function: inputPostFormatter],
+      inputLogFormatter: [Function: inputLogFormatter],
+      inputSignFormatter: [Function: inputSignFormatter],
+      inputStorageKeysFormatter: [Function: inputStorageKeysFormatter],
+      outputProofFormatter: [Function: outputProofFormatter],
+      outputBigNumberFormatter: [Function: outputBigNumberFormatter],
+      outputTransactionFormatter: [Function: outputTransactionFormatter],
+      outputTransactionReceiptFormatter: [Function: outputTransactionReceiptFormatter],
+      outputBlockFormatter: [Function: outputBlockFormatter],
+      outputLogFormatter: [Function: outputLogFormatter],
+      outputPostFormatter: [Function: outputPostFormatter],
+      outputSyncingFormatter: [Function: outputSyncingFormatter]
+    },
+    utils: {
+      _fireError: [Function: _fireError],
+      _jsonInterfaceMethodToString: [Function: _jsonInterfaceMethodToString],
+      _flattenTypes: [Function: _flattenTypes],
+      randomHex: [Function: randomHex],
+      _: [Function],
+      BN: [Function],
+      isBN: [Function: isBN],
+      isBigNumber: [Function: isBigNumber],
+      isHex: [Function: isHex],
+      isHexStrict: [Function: isHexStrict],
+      sha3: [Function],
+      sha3Raw: [Function: sha3Raw],
+      keccak256: [Function],
+      soliditySha3: [Function: soliditySha3],
+      soliditySha3Raw: [Function: soliditySha3Raw],
+      encodePacked: [Function: encodePacked],
+      isAddress: [Function: isAddress],
+      checkAddressChecksum: [Function: checkAddressChecksum],
+      toChecksumAddress: [Function: toChecksumAddress],
+      toHex: [Function: toHex],
+      toBN: [Function: toBN],
+      bytesToHex: [Function: bytesToHex],
+      hexToBytes: [Function: hexToBytes],
+      hexToNumberString: [Function: hexToNumberString],
+      hexToNumber: [Function: hexToNumber],
+      toDecimal: [Function: hexToNumber],
+      numberToHex: [Function: numberToHex],
+      fromDecimal: [Function: numberToHex],
+      hexToUtf8: [Function: hexToUtf8],
+      hexToString: [Function: hexToUtf8],
+      toUtf8: [Function: hexToUtf8],
+      stripHexPrefix: [Function: stripHexPrefix],
+      utf8ToHex: [Function: utf8ToHex],
+      stringToHex: [Function: utf8ToHex],
+      fromUtf8: [Function: utf8ToHex],
+      hexToAscii: [Function: hexToAscii],
+      toAscii: [Function: hexToAscii],
+      asciiToHex: [Function: asciiToHex],
+      fromAscii: [Function: asciiToHex],
+      unitMap: [Object],
+      toWei: [Function: toWei],
+      fromWei: [Function: fromWei],
+      padLeft: [Function: leftPad],
+      leftPad: [Function: leftPad],
+      padRight: [Function: rightPad],
+      rightPad: [Function: rightPad],
+      toTwosComplement: [Function: toTwosComplement],
+      isBloom: [Function: isBloom],
+      isUserEthereumAddressInBloom: [Function: isUserEthereumAddressInBloom],
+      isContractAddressInBloom: [Function: isContractAddressInBloom],
+      isTopic: [Function: isTopic],
+      isTopicInBloom: [Function: isTopicInBloom],
+      isInBloom: [Function: isInBloom],
+      compareBlockNumbers: [Function: compareBlockNumbers]
+    },
+    Method: [Function: Method]
+  },
+  clearSubscriptions: [Function],
+  options: {
+    address: [Getter/Setter],
+    jsonInterface: [Getter/Setter],
+    data: undefined,
+    from: undefined,
+    gasPrice: undefined,
+    gas: undefined
+  },
+  handleRevert: [Getter/Setter],
+  defaultCommon: [Getter/Setter],
+  defaultHardfork: [Getter/Setter],
+  defaultChain: [Getter/Setter],
+  transactionPollingTimeout: [Getter/Setter],
+  transactionConfirmationBlocks: [Getter/Setter],
+  transactionBlockTimeout: [Getter/Setter],
+  defaultAccount: [Getter/Setter],
+  defaultBlock: [Getter/Setter],
+  methods: {
+    ended: [Function: bound _createTxObject],
+    '0x12fa6feb': [Function: bound _createTxObject],
+    'ended()': [Function: bound _createTxObject],
+    factor: [Function: bound _createTxObject],
+    '0x54f703f8': [Function: bound _createTxObject],
+    'factor()': [Function: bound _createTxObject],
+    owner: [Function: bound _createTxObject],
+    '0x8da5cb5b': [Function: bound _createTxObject],
+    'owner()': [Function: bound _createTxObject],
+    price: [Function: bound _createTxObject],
+    '0xa035b1fe': [Function: bound _createTxObject],
+    'price()': [Function: bound _createTxObject],
+    renounceOwnership: [Function: bound _createTxObject],
+    '0x715018a6': [Function: bound _createTxObject],
+    'renounceOwnership()': [Function: bound _createTxObject],
+    seller: [Function: bound _createTxObject],
+    '0x08551a53': [Function: bound _createTxObject],
+    'seller()': [Function: bound _createTxObject],
+    tokenId: [Function: bound _createTxObject],
+    '0x17d70f7c': [Function: bound _createTxObject],
+    'tokenId()': [Function: bound _createTxObject],
+    transferOwnership: [Function: bound _createTxObject],
+    '0xf2fde38b': [Function: bound _createTxObject],
+    'transferOwnership(address)': [Function: bound _createTxObject],
+    pay: [Function: bound _createTxObject],
+    '0xc290d691': [Function: bound _createTxObject],
+    'pay(uint256)': [Function: bound _createTxObject],
+    showRemainingDate: [Function: bound _createTxObject],
+    '0x961a42c3': [Function: bound _createTxObject],
+    'showRemainingDate()': [Function: bound _createTxObject],
+    showProfit: [Function: bound _createTxObject],
+    '0x8f351464': [Function: bound _createTxObject],
+    'showProfit()': [Function: bound _createTxObject],
+    newSale: [Function: bound _createTxObject],
+    '0xff36cae3': [Function: bound _createTxObject],
+    'newSale(uint256,uint256)': [Function: bound _createTxObject]
+  },
+  events: {
+    NewSale: [Function: bound ],
+    '0x7752f985370f9475f09c7dc0523f4e9e8ace8514776ca241f4ddede3d7d7981f': [Function: bound ],
+    'NewSale(uint256,uint256)': [Function: bound ],
+    OwnershipTransferred: [Function: bound ],
+    '0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0': [Function: bound ],
+    'OwnershipTransferred(address,address)': [Function: bound ],
+    PaidUP: [Function: bound ],
+    '0xd3cfab0c51558aadd43b78de331c7dc118459153e35dd41c6566d82822a18478': [Function: bound ],
+    'PaidUP(address,uint256)': [Function: bound ],
+    allEvents: [Function: bound ]
+  },
+  _address: '0xc81B377b74C596773E9c03f6c8f9F9ff168Ed10A',
+  _jsonInterface: [
+    {
+      inputs: [Array],
+      stateMutability: 'nonpayable',
+      type: 'constructor',
+      constant: undefined,
+      payable: undefined,
+      signature: 'constructor'
+    },
+    {
+      anonymous: false,
+      inputs: [Array],
+      name: 'NewSale',
+      type: 'event',
+      constant: undefined,
+      payable: undefined,
+      signature: '0x7752f985370f9475f09c7dc0523f4e9e8ace8514776ca241f4ddede3d7d7981f'
+    },
+    {
+      anonymous: false,
+      inputs: [Array],
+      name: 'OwnershipTransferred',
+      type: 'event',
+      constant: undefined,
+      payable: undefined,
+      signature: '0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0'
+    },
+    {
+      anonymous: false,
+      inputs: [Array],
+      name: 'PaidUP',
+      type: 'event',
+      constant: undefined,
+      payable: undefined,
+      signature: '0xd3cfab0c51558aadd43b78de331c7dc118459153e35dd41c6566d82822a18478'
+    },
+    {
+      inputs: [],
+      name: 'ended',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0x12fa6feb'
+    },
+    {
+      inputs: [],
+      name: 'factor',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0x54f703f8'
+    },
+    {
+      inputs: [],
+      name: 'owner',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0x8da5cb5b'
+    },
+    {
+      inputs: [],
+      name: 'price',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0xa035b1fe'
+    },
+    {
+      inputs: [],
+      name: 'renounceOwnership',
+      outputs: [],
+      stateMutability: 'nonpayable',
+      type: 'function',
+      constant: undefined,
+      payable: undefined,
+      signature: '0x715018a6'
+    },
+    {
+      inputs: [],
+      name: 'seller',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0x08551a53'
+    },
+    {
+      inputs: [],
+      name: 'tokenId',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0x17d70f7c'
+    },
+    {
+      inputs: [Array],
+      name: 'transferOwnership',
+      outputs: [],
+      stateMutability: 'nonpayable',
+      type: 'function',
+      constant: undefined,
+      payable: undefined,
+      signature: '0xf2fde38b'
+    },
+    {
+      inputs: [Array],
+      name: 'pay',
+      outputs: [Array],
+      stateMutability: 'nonpayable',
+      type: 'function',
+      constant: undefined,
+      payable: undefined,
+      signature: '0xc290d691'
+    },
+    {
+      inputs: [],
+      name: 'showRemainingDate',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0x961a42c3'
+    },
+    {
+      inputs: [],
+      name: 'showProfit',
+      outputs: [Array],
+      stateMutability: 'view',
+      type: 'function',
+      constant: true,
+      payable: undefined,
+      signature: '0x8f351464'
+    },
+    {
+      inputs: [Array],
+      name: 'newSale',
+      outputs: [Array],
+      stateMutability: 'nonpayable',
+      type: 'function',
+      constant: undefined,
+      payable: undefined,
+      signature: '0xff36cae3'
+    }
+  ]
+}
